@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/sum4bits.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/mux4_1.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/mux2_1.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/flags.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/controle.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/comp.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/clor.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/clmag.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/cland.vhd}
+vcom -93 -work work {D:/Rosane/Quartus/ULAV2/ulav2.vhd}
+

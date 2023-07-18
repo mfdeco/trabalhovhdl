@@ -1,0 +1,510 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Rosane/Quartus/ULAV4/simulation/modelsim
+Ecland
+Z1 w1688307880
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 8
+R0
+Z4 8D:/Rosane/Quartus/ULAV4/cland.vhd
+Z5 FD:/Rosane/Quartus/ULAV4/cland.vhd
+l0
+L4 1
+VPP=3KjViP`o2Id:2@2TFd0
+!s100 jIAWH0k;WYYVB6HfQC1aL3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1689076489
+!i10b 1
+Z8 !s108 1689076489.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/cland.vhd|
+Z10 !s107 D:/Rosane/Quartus/ULAV4/cland.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aandbit
+R2
+R3
+DEx4 work 5 cland 0 22 PP=3KjViP`o2Id:2@2TFd0
+!i122 8
+l12
+Z13 L11 9
+V075`9WXK<331GS_SeUKdP1
+!s100 hlnie[Knh97G07^>DPc?`3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eclmag
+Z14 w1688328240
+R2
+R3
+!i122 7
+R0
+Z15 8D:/Rosane/Quartus/ULAV4/clmag.vhd
+Z16 FD:/Rosane/Quartus/ULAV4/clmag.vhd
+l0
+L4 1
+Vn?0T13;aMbidO>NECl[?<0
+!s100 CVPB:X21L=0:H^M7Z^gN40
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/clmag.vhd|
+Z18 !s107 D:/Rosane/Quartus/ULAV4/clmag.vhd|
+!i113 1
+R11
+R12
+Acompmag
+R2
+R3
+DEx4 work 5 clmag 0 22 n?0T13;aMbidO>NECl[?<0
+!i122 7
+l13
+L11 13
+V[Z3Z9M17344N]eeRz0Wm:1
+!s100 HGXH]nT?5NNOAMN<Ci:HB3
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Eclor
+Z19 w1688309067
+R2
+R3
+!i122 6
+R0
+Z20 8D:/Rosane/Quartus/ULAV4/clor.vhd
+Z21 FD:/Rosane/Quartus/ULAV4/clor.vhd
+l0
+L4 1
+V1Tm8zNQK:43a4U`M0_n4n1
+!s100 jYB=_SQolo5KZh[c^keQX2
+R6
+31
+Z22 !s110 1689076488
+!i10b 1
+Z23 !s108 1689076488.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/clor.vhd|
+Z25 !s107 D:/Rosane/Quartus/ULAV4/clor.vhd|
+!i113 1
+R11
+R12
+Aorbit
+R2
+R3
+DEx4 work 4 clor 0 22 1Tm8zNQK:43a4U`M0_n4n1
+!i122 6
+l12
+R13
+VISIb4hB7dL6Ea[lll@oDH0
+!s100 >D[TcO:CXU2`>eSGAOJNI2
+R6
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Ecomp
+Z26 w1688311429
+R2
+R3
+!i122 5
+R0
+Z27 8D:/Rosane/Quartus/ULAV4/comp.vhd
+Z28 FD:/Rosane/Quartus/ULAV4/comp.vhd
+l0
+L4 1
+V:3nc?iJZ559LzGcNlRL1A1
+!s100 ^lWmLZJOihmJeW:VzJMc^2
+R6
+31
+R22
+!i10b 1
+R23
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/comp.vhd|
+Z30 !s107 D:/Rosane/Quartus/ULAV4/comp.vhd|
+!i113 1
+R11
+R12
+Aclcomp
+R2
+R3
+DEx4 work 4 comp 0 22 :3nc?iJZ559LzGcNlRL1A1
+!i122 5
+l14
+L13 9
+Vf^KJioFDe_JG7jeXDl9690
+!s100 C`bGQU4;OBBX3KO><;mVb0
+R6
+31
+R22
+!i10b 1
+R23
+R29
+R30
+!i113 1
+R11
+R12
+Econtador
+Z31 w1689074121
+Z32 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 10
+R0
+Z33 8D:/Rosane/Quartus/ULAV4/contador.vhd
+Z34 FD:/Rosane/Quartus/ULAV4/contador.vhd
+l0
+L5 1
+VG]bD:NG61AM<OX0lgKndi0
+!s100 ?[EA_OFz_]kO1BY6dL[ZY2
+R6
+31
+Z35 !s110 1689076490
+!i10b 1
+Z36 !s108 1689076490.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/contador.vhd|
+Z38 !s107 D:/Rosane/Quartus/ULAV4/contador.vhd|
+!i113 1
+R11
+R12
+Artl
+R32
+R2
+R3
+DEx4 work 8 contador 0 22 G]bD:NG61AM<OX0lgKndi0
+!i122 10
+l17
+L13 20
+VCknPW37[7A6iOed@O]h2j1
+!s100 fWU:1NMkf5o0k22W:J:he2
+R6
+31
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R11
+R12
+Econtrole
+Z39 w1688312494
+R2
+R3
+!i122 4
+R0
+Z40 8D:/Rosane/Quartus/ULAV4/controle.vhd
+Z41 FD:/Rosane/Quartus/ULAV4/controle.vhd
+l0
+L5 1
+VX2dEbFE9zFVG91YMQOihh3
+!s100 Gf54<XKCmmfGiUg159P171
+R6
+31
+R22
+!i10b 1
+R23
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/controle.vhd|
+Z43 !s107 D:/Rosane/Quartus/ULAV4/controle.vhd|
+!i113 1
+R11
+R12
+Aunidadecontrole
+R2
+R3
+DEx4 work 8 controle 0 22 X2dEbFE9zFVG91YMQOihh3
+!i122 4
+l11
+L10 10
+V4?a`Ma5h;OkQ2@Y9^odCF1
+!s100 N3biWlL:M><0Mmz=ONQZY3
+R6
+31
+R22
+!i10b 1
+R23
+R42
+R43
+!i113 1
+R11
+R12
+Eflags
+Z44 w1688310321
+R2
+R3
+!i122 3
+R0
+Z45 8D:/Rosane/Quartus/ULAV4/flags.vhd
+Z46 FD:/Rosane/Quartus/ULAV4/flags.vhd
+l0
+L4 1
+VRhBze;hI5<PDz5KnJ64^F1
+!s100 OCb>mgjWBgV<mT[[@>HRL1
+R6
+31
+R22
+!i10b 1
+R23
+Z47 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/flags.vhd|
+Z48 !s107 D:/Rosane/Quartus/ULAV4/flags.vhd|
+!i113 1
+R11
+R12
+Asinalizador
+R2
+R3
+DEx4 work 5 flags 0 22 RhBze;hI5<PDz5KnJ64^F1
+!i122 3
+l13
+L12 9
+V0ZjWfK7AfGjYOSeiGIgJl3
+!s100 aTA<a2`kinbLZYLYk8?2?1
+R6
+31
+R22
+!i10b 1
+R23
+R47
+R48
+!i113 1
+R11
+R12
+Emux2_1
+Z49 w1688329568
+R2
+R3
+!i122 2
+R0
+Z50 8D:/Rosane/Quartus/ULAV4/mux2_1.vhd
+Z51 FD:/Rosane/Quartus/ULAV4/mux2_1.vhd
+l0
+L4 1
+VKa8aXC_NL4j^TP5KYWEFz1
+!s100 P?<X>PS:28WSLKAeH?2C]1
+R6
+31
+Z52 !s110 1689076487
+!i10b 1
+Z53 !s108 1689076487.000000
+Z54 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/mux2_1.vhd|
+Z55 !s107 D:/Rosane/Quartus/ULAV4/mux2_1.vhd|
+!i113 1
+R11
+R12
+Amux421
+R2
+R3
+DEx4 work 6 mux2_1 0 22 Ka8aXC_NL4j^TP5KYWEFz1
+!i122 2
+l12
+L11 12
+VQ7b>AHA:AL1Ia@BOU3`ch1
+!s100 AAXaSEAk_F9C0XCn[[00i0
+R6
+31
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Emux4_1
+Z56 w1688324783
+R2
+R3
+!i122 1
+R0
+Z57 8D:/Rosane/Quartus/ULAV4/mux4_1.vhd
+Z58 FD:/Rosane/Quartus/ULAV4/mux4_1.vhd
+l0
+L4 1
+VlA^NXBPQc88@zC6C4Xh]h1
+!s100 []6Jg^zgFO`^TkOSXF:g10
+R6
+31
+R52
+!i10b 1
+R53
+Z59 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/mux4_1.vhd|
+Z60 !s107 D:/Rosane/Quartus/ULAV4/mux4_1.vhd|
+!i113 1
+R11
+R12
+Amux441
+R2
+R3
+DEx4 work 6 mux4_1 0 22 lA^NXBPQc88@zC6C4Xh]h1
+!i122 1
+l14
+L13 17
+VaZzlDBcURj8^GEhFz8JAL0
+!s100 z@GeiA_U5G6im^hd@BZR93
+R6
+31
+R52
+!i10b 1
+R53
+R59
+R60
+!i113 1
+R11
+R12
+Esum4bits
+Z61 w1688306137
+R2
+R3
+!i122 0
+R0
+Z62 8D:/Rosane/Quartus/ULAV4/sum4bits.vhd
+Z63 FD:/Rosane/Quartus/ULAV4/sum4bits.vhd
+l0
+L4 1
+V9kEdDY5jKHK;4=?0_`0kB1
+!s100 DT4AihG=8EUU9WV;RYnYc0
+R6
+31
+R52
+!i10b 1
+R53
+Z64 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/sum4bits.vhd|
+Z65 !s107 D:/Rosane/Quartus/ULAV4/sum4bits.vhd|
+!i113 1
+R11
+R12
+Asomador
+R2
+R3
+DEx4 work 8 sum4bits 0 22 9kEdDY5jKHK;4=?0_`0kB1
+!i122 0
+l20
+L16 21
+VT2<meRLS]WTBT^4;J?BVJ1
+!s100 lJQM9^>fW2IFR=FWcVAZ43
+R6
+31
+R52
+!i10b 1
+R53
+R64
+R65
+!i113 1
+R11
+R12
+Etestbench
+Z66 w1689076430
+Z67 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z68 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 11
+R0
+Z69 8D:/Rosane/Quartus/ULAV4/testbench.vhd
+Z70 FD:/Rosane/Quartus/ULAV4/testbench.vhd
+l0
+L6 1
+V870^UGB8AghfI>]OiAkZi1
+!s100 0QRXbcPL^WcJ<3kNl<iE12
+R6
+31
+Z71 !s110 1689076497
+!i10b 1
+Z72 !s108 1689076497.000000
+Z73 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/testbench.vhd|
+!s107 D:/Rosane/Quartus/ULAV4/testbench.vhd|
+!i113 1
+R11
+R12
+Atb
+Z74 DEx4 work 5 ulav2 0 22 [5:liVkWI]<7eef39CMUZ0
+R67
+R68
+R2
+R3
+DEx4 work 9 testbench 0 22 870^UGB8AghfI>]OiAkZi1
+!i122 11
+l22
+L11 42
+V8d8HG`LiJb6<lNkQbJ4lU0
+!s100 W2zQ5`AfM7nDI4i:SRW2A3
+R6
+31
+R71
+!i10b 1
+R72
+R73
+Z75 !s107 D:/Rosane/Quartus/ULAV4/testbench.vhd|
+!i113 1
+R11
+R12
+Eulav2
+Z76 w1689075987
+R2
+R3
+!i122 9
+R0
+Z77 8D:/Rosane/Quartus/ULAV4/ulav2.vhd
+Z78 FD:/Rosane/Quartus/ULAV4/ulav2.vhd
+l0
+L4 1
+V[5:liVkWI]<7eef39CMUZ0
+!s100 BP176B<ikJL[j7M3OMWW=0
+R6
+31
+R7
+!i10b 1
+R8
+Z79 !s90 -reportprogress|300|-93|-work|work|D:/Rosane/Quartus/ULAV4/ulav2.vhd|
+Z80 !s107 D:/Rosane/Quartus/ULAV4/ulav2.vhd|
+!i113 1
+R11
+R12
+Aula_sd
+R2
+R3
+R74
+!i122 9
+l159
+L16 186
+VT?kE6AklPi7jC0a5P96Y_3
+!s100 5ie^UG74Jd8<ZEO;SGfOW0
+R6
+31
+R7
+!i10b 1
+R8
+R79
+R80
+!i113 1
+R11
+R12

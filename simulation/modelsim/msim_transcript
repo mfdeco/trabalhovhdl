@@ -1,0 +1,186 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do ulav2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/sum4bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:47 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/sum4bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sum4bits
+# -- Compiling architecture somador of sum4bits
+# End time: 08:54:47 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/mux4_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:47 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/mux4_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4_1
+# -- Compiling architecture mux441 of mux4_1
+# End time: 08:54:47 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/mux2_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:47 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2_1
+# -- Compiling architecture mux421 of mux2_1
+# End time: 08:54:47 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/flags.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:48 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/flags.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flags
+# -- Compiling architecture sinalizador of flags
+# End time: 08:54:48 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/controle.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:48 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/controle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controle
+# -- Compiling architecture unidadecontrole of controle
+# End time: 08:54:48 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/comp.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:48 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/comp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comp
+# -- Compiling architecture clcomp of comp
+# End time: 08:54:48 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/clor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:48 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/clor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clor
+# -- Compiling architecture orbit of clor
+# End time: 08:54:48 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/clmag.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:49 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/clmag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clmag
+# -- Compiling architecture compmag of clmag
+# End time: 08:54:49 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/cland.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:49 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/cland.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cland
+# -- Compiling architecture andbit of cland
+# End time: 08:54:49 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/ulav2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:49 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/ulav2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ULAV2
+# -- Compiling architecture ULA_SD of ULAV2
+# End time: 08:54:49 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/contador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:50 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/contador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# End time: 08:54:50 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Rosane/Quartus/ULAV4/testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:57 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work D:/Rosane/Quartus/ULAV4/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity testbench
+# -- Compiling architecture tb of testbench
+# -- Loading entity ULAV2
+# End time: 08:54:57 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 08:54:58 on Jul 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.testbench(tb)
+# Loading work.ulav2(ula_sd)
+# Loading work.controle(unidadecontrole)
+# Loading work.comp(clcomp)
+# Loading work.mux2_1(mux421)
+# Loading work.sum4bits(somador)
+# Loading work.cland(andbit)
+# Loading work.clor(orbit)
+# Loading work.clmag(compmag)
+# Loading work.flags(sinalizador)
+# Loading work.mux4_1(mux441)
+# Loading ieee.numeric_std(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 55219  Hostname: LAPTOP-9V22KKHI  ProcessID: 10064
+#           Attempting to use alternate WLF file "./wlftgwweax".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgwweax
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 110 us
+# End time: 08:55:57 on Jul 11,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 2

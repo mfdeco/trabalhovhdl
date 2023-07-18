@@ -1,0 +1,183 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ULAV2 is 
+-- declaração das portas de entrada
+port (X : in std_logic_vector (3 downto 0); 
+      Y : in std_logic_vector (3 downto 0); 
+		f: in std_logic_vector (2 downto 0); ;
+-- declaração das portas de saída
+      D : out std_logic_vector (3 downto 0);
+		zeros, overflow, carryout, sinal: out std_logic ) ; 
+end ULAV2; 
+
+
+architecture ULA_SD of ULAV2 is
+--------------------------------------------
+	component UnidadeControle is 
+		port (f0, f1, f2: in std_logic;
+				KM0, KM1, KM2, C0, KX, KY: out std_logic ) ; 
+	end component UnidadeControle; 
+---------------------------------------------		
+	component portasor is 
+
+		port (A0,A1,A2,A3,B0,B1,B2,B3: in std_logic;
+				Y0,Y1,Y2,Y3: out std_logic ) ; 
+	end component portasor; 
+------------------------------------------------	
+	component portasmag is 
+	
+	port (A0,A1,A2,A3,B0,B1,B2,B3: in std_logic;
+			AmaiorB,AigualB,AmenorB: out std_logic ) ; 
+	end component portasmag; 
+-----------------------------------------------------	
+	component portasand is 
+
+		port (A0,A1,A2,A3,B0,B1,B2,B3: in std_logic;
+
+				Y0,Y1,Y2,Y3: out std_logic ) ; 
+		end component portasand; 
+--------------------------------------------------
+	component mux2_1 is
+
+	port(A0,A1,A2,A3,B0,B1,B2,B3,sel: in std_logic;
+	
+		  Y0,Y1,Y2,Y3: out std_logic);
+	end component mux2_1;
+---------------------------------------------------
+	component multiplex4_1 is
+
+	port(A0,A1,A2,A3,
+		  S0,S1,S2,S3,
+		  M0,M1,M2,M3,
+		  O0,O1,O2,O3,
+		  KM1, KM2: in std_logic;
+
+		  D0,D1,D2,D3: out std_logic);
+		  
+	end component multiplex4_1;
+---------------------------------------------------
+
+	component indicador is 
+
+	port (S0,S1,S2,S3,
+	Cn_1,Cn: in std_logic;
+
+	zeros,overflow,sinal,carryout: out std_logic ) ; 
+	
+	end component indicador;
+---------------------------------------------------
+	component fulladder is 
+	port(	X0,X1,X2,X3,
+			Y0,Y1,Y2,Y3,C0: in std_logic;
+	
+			S0,S1,S2,S3,Cn,Cn_1: out std_logic);
+			
+	end component fulladder;	
+------------------------------------------------
+	component complemento is 
+
+	port (X0,X1,X2,X3, sel: in std_logic;
+
+			Y0,Y1,Y2,Y3: out std_logic ) ; 
+	end component complemento; 
+-----------------------------------------------------	
+	
+	
+-- sinais de saída do módulo controle 
+-- recebem f0,f1 e f2 da ula e liberam KM0,KM1,KM2,C0,KX E KY
+--port (X0,X1,X2,X3, sel,Y0,Y1,Y2,Y3) ;
+
+	signal KM0, KM1, KM2, C0, KX, KY : std_logic;
+
+-- sinais de saida do circuito de complemento a  um ligados a entrada X
+-- RECEBEM X(0..3) e liberam CPM1_(0..3)
+--port (X0,X1,X2,X3, sel,Y0,Y1,Y2,Y3) ; 
+
+	signal CPM1_0, CPM1_1 , CPM1_2, CPM1_3 : std_logic;
+	
+-- sinais de saida do circuito de complemento a  um ligados a entrada Y
+-- recebem as entradas Y(0..3) e liberam CPM2_(0..3)
+	signal CPM2_0, CPM2_1 , CPM2_2, CPM2_3 : std_logic;
+	
+-- sinais da chave1 
+-- recebem -CPM2_(0..3) e KM0 e liberam CH1_(0..3), as entradas B(0..3) são iguais a zero
+--port(A0,A1,A2,A3,B0,B1,B2,B3,sel,Y0,Y1,Y2,Y3);
+	signal CH1_0, CH1_1, CH1_2, CH1_3 : std_logic;
+	
+	
+-- somador
+--port(X0,X1,X2,X3,Y0,Y1,Y2,Y3,C0,S0,S1,S2,S3,Cn,Cn_1);
+-- Recebem CPM1_0, CPM1_1 , CPM1_2, CPM1_3, CPM2_0, CPM2_1 , CPM2_2, CPM2_3, C0
+-- e liberam SUM0, SUM1, SUM2, SUM3, CN, CN_1
+	signal 	SUM0, SUM1, SUM2, SUM3, CN, CN_1 : std_logic;
+	
+-- módulo and bit a bit
+--port(A0,A1,A2,A3,B0,B1,B2,B3,Y0,Y1,Y2,Y3)
+-- recebem X(0..3) e Y(0..3) da entrada e liberam land0,land1,land2,land3
+	signal land0,land1,land2,land3 : std_logic;
+
+-- módulo or bit a bit
+--port(A0,A1,A2,A3,B0,B1,B2,B3,Y0,Y1,Y2,Y3)
+-- recebem X(0..3) e Y(0..3) da entrada e liberam lor0,lor1,lor2,lor3
+	signal lor0,lor1,lor2,lor3 : std_logic;
+
+	
+-- módulo magnitude
+--port(A0,A1,A2,A3,B0,B1,B2,B3,AmaiorB,AigualB,AmenorB)
+-- recebem X(0..3) e Y(0..3) da entrada e liberam AmaiorB,AigualB,AmenorB
+	signal AmaB,AiB,AmeB : std_logic;
+
+-- módulo dos flags 
+--recebem SUM(0..3), CN e CN_1 e liberam zeros,overflow,sinal,carryou
+--	port (S0,S1,S2,S3,Cn_1,Cn,	zeros,overflow,sinal,carryout) ; 
+--	zeros,overflow,sinal,carryout já são as sáídas da ula	
+
+	
+-- módulo chave2
+--	port(A0,A1,A2,A3,S0,S1,S2,S3,M0,M1,M2,M3, O0,O1,O2,O3, KM1, KM2, D0,D1,D2,D3);
+-- D(0..3) já são as sáídas da ula	
+
+-------------------------------------------------
+		
+begin
+
+	controle: UnidadeControle
+		-- faz a connexão da entrada da ula => entrada do controle
+		port map(f0,f1,f2, KM0, KM1, KM2, C0, KX, KY);
+		
+	comp1: complemento 
+	-- faz a connexão da entrada da ula => entrada do complemento
+		port map(X0, X1, X2,	X3, KX, CPM1_0, CPM1_1, CPM1_2, CPM1_3);
+					
+	
+	comp2: complemento 
+		port map(Y0,Y1,Y2,Y3,KY, CPM2_0,CPM2_1,CPM2_2,CPM2_3);
+					
+	chave1: mux2_1
+		port map(CPM2_0,CPM2_1,CPM2_2,CPM2_3,'0','0','0','0',KM0,CH1_0,CH1_1,CH1_2,CH1_3);
+	
+	
+	somador: fulladder
+		port map(CPM1_0, CPM1_1 , CPM1_2, CPM1_3,CPM2_0, CPM2_1 , CPM2_2, CPM2_3, C0,SUM0, SUM1, SUM2, SUM3, CN, CN_1);
+		
+	cland: portasand
+		port map(X0,X1,X2,X3,Y0,Y1,Y2,Y3,land0,land1,land2,land3) ; 
+		
+	cor: portasor
+		port map(X0,X1,X2,X3,Y0,Y1,Y2,Y3,lor0,lor1,lor2,lor3) ; 
+	
+	cmag: portasmag 
+			port map(X0,X1,X2,X3,Y0,Y1,Y2,Y3,AmaB,AiB,AmeB);
+		
+	flag: indicador
+			port map(SUM0,SUM1,SUM2,SUM3, CN_1, CN, zeros,overflow,sinal,carryout); 
+		
+	chave2: multiplex4_1
+			port map (land0,land1,land2,land3,SUM0, SUM1, SUM2, SUM3,AmaB,AiB,AmeB,'0', lor0,lor1,lor2,lor3, KM1, KM2, D0,D1,D2,D3);
+	
+	
+	
+
+end ULA_SD;	
+	
